@@ -1,0 +1,98 @@
+<html>
+    <head>
+
+        <title>Explain Various methods in console function:-</title>
+        <body>
+            <h1>Types of console </h1>
+             <p>console.log(),
+                console.error(),
+                console.warn(),
+                console.clear(),
+                console.time() and console.timeEnd(),
+                console.table(),
+                console.count(),
+                console.group() and console.groupEnd(),
+                console.custom console logs,</p>
+
+                <h2>console.log()</h2>
+                <p>used to log(print) the output to the console. We can put any type inside the log(), be it a string, array, object, boolean etc.</p>
+                <h2>Examples:
+                    console.log('abc');  
+                    console.log(1); 
+                    console.log(true); 
+                    console.log(null); 
+                    console.log(undefined);  
+                    console.log([1, 2, 3, 4]);
+                </h2>
+
+                <h3>console.error()</h3>
+                <p>Used to log error message to the console. Useful in testing of code. By default the error message will be highlighted with red color</p>
+                <h3>Example:
+                    console.error('This is a simple error');</h3>
+
+                <h4>console.warn()</h4>
+                <p>Used to log warning message to the console. By default the warning message will be highlighted with yellow color</p>
+                <h4>Example:
+                    console.warn('This is a warning.'); </h4>       
+                    
+                <h5>console.clear():</h5>    
+                <p>to clear the console. The console will be cleared, in case of Chrome a simple overlayed text will be printed like : ‘Console was cleared’ while in firefox no message is returned.</p>
+                <h5>Example:
+                    console.clear(); 
+                </h5>
+
+                <h6>console.time() and console.timeEnd().</h6>
+                <p>Whenever we want to know the amount of time spend by a block or a function, we can make use of the time() and timeEnd() methods provided by the javascript console object. They take a label which must be same, and the code inside can be anything( function, object, simple console).</p>
+                <h6>console.time('abc'); 
+                    let fun =  function(){ 
+                        console.log('fun is running'); 
+                    } 
+                    let fun2 = function(){ 
+                        console.log('fun2 is running..'); 
+                    } 
+                    fun(); // calling fun(); 
+                    fun2(); // calling fun2(); 
+                   console.timeEnd('abc'); </h6>
+
+
+                <h7>console.table()</h7>
+                <p>This method allows us to generate a table inside a console. The input must be an array or an object which will be shown as a table.</p>
+                <h7>Example:
+                    console.table({'a':1, 'b':2});
+                </h7>
+
+                <h8>console.count()</h8>
+                <p>This method is used to count the number that the function hit by this counting method.</p>
+                <h8>Examples:
+                 
+                        console.count(i); 
+                </h8>
+                <h9>console.group() and console.groupEnd()</h9>
+                <p>group() and groupEnd() methods of the console object allows us to group contents in a separate block, which will be indented. Just like the time() and the timeEnd() they also accepts label, again of same value.</p>
+                <h9>Examples:
+                    console.group('simple'); 
+                    console.warn('warning!'); 
+                    console.error('error here'); 
+                    console.log('vivi vini vici'); 
+                    console.groupEnd('simple'); 
+                    console.log('new section');
+                </h9>
+                <h10>console.custom console logs</h10>
+                <p>User can add Styling to the console logs in order to make logs Custom . The Syntax for it is to add the css styling as a parameter to the logs which will replace %c in the logs as shown in the example below .</p>
+                <h10>Examples:
+                    const spacing = '10px'; 
+                    const styles =  
+                   `padding: ${spacing}; background-color: white; color: green; font-style:  
+                    italic; border: 1px solid black; font-size: 2em;`; 
+                    console.log('%cGeeks for Geeks', styles); 
+                </h10>
+       
+      
+        
+       
+      
+     
+    </body>
+        
+    </head>
+</html>

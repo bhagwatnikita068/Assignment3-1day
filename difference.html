@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Difference Var,Let,Constance
+        </title>
+        <body>
+        <table border=1>
+            <tr>
+                <th>Parameters</th>
+                <th>Var</th>
+                <th>Let</th>
+                <th>Constant</th>
+              </tr>
+              <tr>
+                <td>define</td>
+                <td>Before the advent of ES6, var declarations ruled.</td>
+                <td>let is now preferred for variable declaration</td>
+                <td>Variables declared with the const maintain constant values</td>
+              </tr>
+
+              <tr>
+                <td>Keywords defination</td>
+                <td>`var` is now the weakest signal available when you define a variable in JavaScript. </td>
+                <td>`let` is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm. It also signals that the variable will be used only in the block it’s defined in, which is not always the entire containing function.</td>
+                <td>`const` is a signal that the identifier won’t be reassigned.</td>
+              </tr>
+
+              <tr>
+                <td> Define variables using the keywords var, let or const.</td>
+                <td>var a=10;</td>
+                <td>let b=20;</td>
+                <td>const PI=3.14;</td>
+              </tr>
+              <tr>
+                  <td>Program Examples</td>
+                  <td>Input:
+                    console.log(x);
+                    var x=5;
+                    console.log(x);
+                    Output:
+                    undefined
+                    5</td>
+                  <td>Input:
+                    console.log(x);
+                    let x=5;
+                    console.log(x);
+                    Output:
+                    Error</td>
+                  <td>const PI = 3.141592653589793;
+                    PI = 3.14;      
+                    PI = PI + 10;   
+                    output:
+                    TypeError: Assignment to constant variable.</td>
+              </tr>
+
+        </table>
+
+
+        </body>
+    </head>
+
+</html>
